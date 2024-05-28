@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    font-family: "Comic Sans MS", "Comic Neue", cursive;
+    background: #323437;
+    color: silver;
+    border-top: 15px solid #e2b714;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.typed-innerval {
+    color: white;
+}
+
+#typer-text-storage {
+    display: none;
+}
+
+#hidden-text-conv-thing {
+    display: none;
+}
+
+.wrong {
+    color: rgb(133, 16, 16);
+}
+
+.wrong2 {
+    color: rgb(189, 33, 33);
+}
+
+.wrong-space {
+    background-color: rgb(133, 16, 16);
+    border-radius: 2px;
+    opacity: 0.3;
+}
+
+#typer {
+    position: fixed;
+    left: -900000px;
+    opacity: 0.0;
+}
+
+#typer-text {
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    text-align: center;
+    max-width: 77%;
+    word-break: break-all;
+    height: auto;
+    overflow: hidden;
+    transform: translateX(-50%);
+    font-size: 45px;
+    display: flex;
+    white-space: pre;
+}
+
+#typerstuff {
+    display: none;
+}
+
+.typed-innerval:last-of-type {
+    animation: moveslight 1s infinite;
+    transform: rotate(0deg);
+    display: block;
+    transition: 0.3s;
+}
+
+
+@keyframes moveslight {
+    0% {
+        transform: rotate(7deg);
+    }
+
+    50% {
+        transform: rotate(-7deg);
+    }
+
+    100% {
+        transform: rotate(7deg);
+    }
+}
