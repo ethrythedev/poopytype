@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if(document.querySelector("#typer").value.length > 7 && document.querySelector("#typer").value.length > typerLengthBefore) {
             document.querySelector("#typer-text").scrollTo({
-                left: document.querySelector("#typer-text").scrollLeft + document.querySelector(".typedletterdispl:last-of-type").offsetWidth,
+                left: document.querySelector("#typer-text").scrollLeft + document.querySelector(".typedletterdispl:last-of-type").offsetWidth + 10,
                 behavior: 'smooth'
               });
               
