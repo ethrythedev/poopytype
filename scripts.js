@@ -7,6 +7,10 @@ var timerValMs = 0;
 var wpm = 0;
 var typerLengthBefore = typerTypeBefore = 0;
 
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("#typer").value = "";
+});
+
 var accuracy;
 
 function calculateAccuracy() {
@@ -208,7 +212,7 @@ function finished() {
     wpm = (textWords / (timerVal / 60));
 
     document.querySelector("#typer-text").innerHTML = (Math.round(wpm) + " WPM") + "<br>" + accuracy + "% accuracy";
-    document.querySelector("#typer-text").parentNode.innerHTML += "<button class='btn btn-primary btn-sm' onclick='window.location.reload();'>Restart</button>";
+    document.querySelector("#typer-text").parentNode.innerHTML += "<button class='btn btn-warning btn-sm' style='position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%);' onclick='window.location.reload();'>Restart</button>";
     canChangeTxt = false;
 }
 
