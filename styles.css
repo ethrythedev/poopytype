@@ -72,6 +72,17 @@ body {
     transition: 0.3s;
 }
 
+.best-s-s {
+    display: none;
+}
+
+.best-shittiest:hover .best-s-s {
+    display: inline-block;
+}
+
+.best-shittiest:hover .best-s-best {
+    display: none;
+}
 
 @keyframes moveslight {
     0% {
