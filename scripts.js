@@ -148,7 +148,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 left: document.querySelector("#typer-text").scrollLeft + document.querySelector(".typedletterdispl:last-of-type").offsetWidth + 20,
                 behavior: 'smooth'
               });
-            // might not wokr idk
               
         } else if(document.querySelector("#typer").value.length < typerLengthBefore) {
             try{document.querySelector("#typer-text").scrollTo({
