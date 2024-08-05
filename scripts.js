@@ -9,6 +9,10 @@ var typerLengthBefore = typerTypeBefore = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#typer").value = "";
+    document.querySelector("#typer-text").scrollTo({
+        left: 0,
+        behavior: 'smooth'
+      });
 });
 
 var accuracy;
