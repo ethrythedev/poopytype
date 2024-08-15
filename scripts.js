@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector("#typer").addEventListener("input", (e) => {
-        document.querySelector("#scroll-key-hint").classList.add("d-none");
+        document.querySelector(".scroll-key-hint").classList.add("d-none");
         
         if((document.querySelector("#typer").value.length - typerLengthBefore) <= -4) {
             e.preventDefault();
