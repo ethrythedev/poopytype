@@ -15,6 +15,34 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 });
 
+function scrollText(direction) {
+  const textElement = document.querySelector("#typer-text");
+  
+  if (direction === 'right') {
+    textElement.scrollTo({
+      left: textElement.scrollLeft + 20, // Scroll right by 20 pixels
+      behavior: 'smooth'
+    });
+  } else if (direction === 'left') {
+    textElement.scrollTo({
+      left: textElement.scrollLeft - 20, // Scroll left by 20 pixels
+      behavior: 'smooth'
+    });
+  }
+}
+
+// Add event listener for keydown
+document.addEventListener('keydown', function(event) {
+  switch (event.key) {
+    case 'ArrowRight':
+      scrollText('right');
+      break;
+    case 'ArrowLeft':
+      scrollText('left');
+      break;
+  }
+});
+
 var accuracy;
 
 function calculateAccuracy() {
