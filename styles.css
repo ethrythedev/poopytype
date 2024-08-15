@@ -2,9 +2,9 @@
 
 body {
     font-family: "Comic Sans MS", "Comic Neue", cursive;
-    background: #323437;
+    background: #2b2725;
     color: silver;
-    border-top: 15px solid #e2b714;
+    /*border-top: 15px solid #e2b714;*/
 }
 
 .nav-inner {
