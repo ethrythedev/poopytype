@@ -7,6 +7,15 @@ body {
     /*border-top: 15px solid #e2b714;*/
 }
 
+.scroll-key-hint {
+    opacity: 0.5;
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
 .nav-inner {
     display: flex;
     align-items: center;
