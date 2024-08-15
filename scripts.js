@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#typer-text").scrollTo({
         left: 0,
         behavior: 'smooth'
-      });
+    });
 });
 
 function scrollText(direction) {
